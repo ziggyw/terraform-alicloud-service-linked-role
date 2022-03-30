@@ -1,25 +1,20 @@
 # terraform-alicloud-service-linked-role
+本 Module 用于实现阿里云上云产品服务关联角色。
 
-
-English | [简体中文](https://github.com/terraform-alicloud-modules/terraform-alicloud-service-linked-role/blob/master/README-CN.md)
-
-Terraform Module used to create several service linked roles automatically Alibaba Cloud.
-
-These types of resources are supported:
+本 Module 支持创建以下资源:
 
 * [alicloud_resource_manager_service_linked_role](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/resource_manager_service_linked_role)
 
-## Terraform versions
+## Terraform 版本
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.0 |
 | <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.159.0
 
-## Usage
+## 用法
 
 ```hcl
-
 variable "hbr_services" {
   type = list(string)
   default = [
@@ -62,24 +57,24 @@ module "csk" {
 }
 ```
 
-## Examples
+## 示例
 
 * [Operation Orchestration Service example](https://github.com/terraform-alicloud-modules/terraform-alicloud-service-linked-role/tree/master/examples/oos)
 * [Event Bridge example](https://github.com/terraform-alicloud-modules/terraform-alicloud-service-linked-role/tree/master/examples/eventbridge)
 * [Container Service for Kubernetes example](https://github.com/terraform-alicloud-modules/terraform-alicloud-service-linked-role/tree/master/examples/container-service-kubernetes)
 
 
-Authors
+作者
 -------
 Created and maintained by Alibaba Cloud Terraform Team(terraform@alibabacloud.com)
 
-License
+许可
 ----
  MIT Licensed. See LICENSE for full details.
 
-Reference
+参考
 ---------
 * [Terraform-Provider-Alicloud Github](https://github.com/terraform-providers/terraform-provider-alicloud)
 * [Terraform-Provider-Alicloud Release](https://releases.hashicorp.com/terraform-provider-alicloud/)
 * [Terraform-Provider-Alicloud Docs](https://www.terraform.io/docs/providers/alicloud/index.html)
-* [Service-linked roles](https://www.alibabacloud.com/help/en/doc-detail/160674.html)
+* [服务关联角色](https://www.alibabacloud.com/help/en/doc-detail/160674.html)
