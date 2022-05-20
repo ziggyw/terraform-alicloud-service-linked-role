@@ -4,4 +4,4 @@ deploy:
   steps:
     terraformInit:
       before:       
-        - 'terraformInit init---------'
+        - 'echo "terraformInit init---------"'
